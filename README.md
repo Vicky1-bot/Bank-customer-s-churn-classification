@@ -31,7 +31,7 @@ This dataset is composed of 10,000 rows representing a customer and 11 features.
    
  #### 2.Feature engineering: 
  
-  Let's Converting categorical features into numerical features using get_dummies().here basically,Converting 'Geography' and 'Gender' column and appending the columns to the dataframe.
+  Let's Converting categorical features into numerical features using get_dummies().here basically,Converting *'Geography' and 'Gender'* column and appending the columns to the dataframe.
  
  #### 3.Data preprocessing:
  • Split the dataset into independent features (ie: X) and label (ie: y).
@@ -90,9 +90,9 @@ There is no need to specify the input dimensions since our network already knows
 ```
 Adding Output layer
 
-units — one node in the output layer
+*units* — one node in the output layer
 
-activation — If there are more than two categories in the output we would use the softmax
+*activation* — If there are more than two categories in the output we would use the softmax
 
 ```python
 classifier.add(Dense(units = 1, kernel_initializer = ‘glorot_uniform’, activation = ‘sigmoid’))
@@ -100,13 +100,13 @@ classifier.add(Dense(units = 1, kernel_initializer = ‘glorot_uniform’, activ
 
 Step 4. Cost Function : Measure the generated error by comparing the predicted value with the true value.
 
-Stochastic Gradient Descent — Compiling the ANN
+*Stochastic Gradient Descent* — Compiling the ANN
 
-optimizer — algorithm to use to find the best weights that will make our system powerful
+*optimizer* — algorithm to use to find the best weights that will make our system powerful
 
-loss — Loss function within our optimizer algorithm
+*loss* — Loss function within our optimizer algorithm
 
-metric — criteria to evaluate the model
+*metric* — criteria to evaluate the model
 
 ```python
 classifier.compile(optimizer = ‘adam’,loss= “binary_crossentropy”,metrics=[“accuracy”])
