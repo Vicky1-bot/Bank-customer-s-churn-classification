@@ -90,14 +90,12 @@ There is no need to specify the input dimensions since our network already knows
 '''
 Adding Output layer
 
-There is no need to specify the input dimensions since our network already knows.
-
 units — one node in the output layer
 
 activation — If there are more than two categories in the output we would use the softmax
 
 '''python
-   classifier.add(Dense(units = 1, kernel_initializer = ‘glorot_uniform’, activation = ‘sigmoid’))
+classifier.add(Dense(units = 1, kernel_initializer = ‘glorot_uniform’, activation = ‘sigmoid’))
 '''
 
 Step 4. Cost Function : Measure the generated error by comparing the predicted value with the true value.
